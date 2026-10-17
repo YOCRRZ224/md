@@ -10,7 +10,7 @@ import os
 
 SITE_URL = os.getenv(
     "VRSS_SITE_URL",
-    "https://blog.vorcinex.yocrrz.is-a.dev/",
+    "https://yocrrz.likes-ur.mom/md",
 ).rstrip("/") + "/"
 
 BLOG_DIR = Path("blog")
