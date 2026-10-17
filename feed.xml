@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+ xmlns:atom="http://www.w3.org/2005/Atom"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>my things</title>
+<link>https://yocrrz.likes-ur.mom/md/</link>
+<description>Things that I feel</description>
+<language>en</language>
+<generator>vRSS</generator>
+<ttl>30</ttl>
+<atom:link href="https://yocrrz.likes-ur.mom/md/feed.xml" rel="self" type="application/rss+xml"/>
+
+<item>
+<title>kamra</title>
+<link>https://yocrrz.likes-ur.mom/md/blog/2026-10-17-kamra-4.html</link>
+<description><![CDATA[<p>ek tha kamra
+basi jindagi thi usme
+suvere hot hi gaybe ho jati 
+hava me
+
+
+एक था कमरा ,
+बासी ज़िंदगी थी उसमें,
+ सवेरे होत ही ग़ायब हो जाती हवा में…
+
+</p><p><a href="https://yocrrz.likes-ur.mom/md/blog/2026-10-17-kamra-4.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p>]]></description>
+<content:encoded><![CDATA[<article><p>ek tha kamra
+basi jindagi thi usme
+suvere hot hi gaybe ho jati 
+hava me
+
+
+एक था कमरा ,
+बासी ज़िंदगी थी उसमें,
+ सवेरे होत ही ग़ायब हो जाती हवा में…
+
+</p><p><a href="https://yocrrz.likes-ur.mom/md/blog/2026-10-17-kamra-4.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p></article>]]></content:encoded>
+<pubDate>Sat, 17 Oct 2026 17:00:10 GMT</pubDate>
+<guid isPermaLink="false">urn:vrss:4</guid>
+<dc:creator>@yocrrz</dc:creator>
+<category>Community</category>
+<category>vRSS</category>
+</item>
+<item>
+<title>test1</title>
+<link>https://yocrrz.likes-ur.mom/md/blog/2026-10-17-test1-3.html</link>
+<description><![CDATA[<p>test1</p><p><a href="https://yocrrz.likes-ur.mom/md/blog/2026-10-17-test1-3.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p>]]></description>
+<content:encoded><![CDATA[<article><p>test1</p><p><a href="https://yocrrz.likes-ur.mom/md/blog/2026-10-17-test1-3.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p></article>]]></content:encoded>
+<pubDate>Sat, 17 Oct 2026 16:30:43 GMT</pubDate>
+<guid isPermaLink="false">urn:vrss:3</guid>
+<dc:creator>@yocrrz</dc:creator>
+<category>Community</category>
+<category>vRSS</category>
+</item>
+<item>
+<title>test1</title>
+<link>https://yocrrz224.github.io/md/blog/2026-10-17-test1-2.html</link>
+<description><![CDATA[<p>test1</p><p><a href="https://yocrrz224.github.io/md/blog/2026-10-17-test1-2.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p>]]></description>
+<content:encoded><![CDATA[<article><p>test1</p><p><a href="https://yocrrz224.github.io/md/blog/2026-10-17-test1-2.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p></article>]]></content:encoded>
+<pubDate>Sat, 17 Oct 2026 15:56:45 GMT</pubDate>
+<guid isPermaLink="false">urn:vrss:2</guid>
+<dc:creator>@yocrrz</dc:creator>
+<category>Community</category>
+<category>vRSS</category>
+</item>
+<item>
+<title>test1</title>
+<link>https://yocrrz224.github.io/md/blog/2026-10-17-test1-1.html</link>
+<description><![CDATA[<p>test1</p><p><a href="https://yocrrz224.github.io/md/blog/2026-10-17-test1-1.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p>]]></description>
+<content:encoded><![CDATA[<article><p>test1</p><p><a href="https://yocrrz224.github.io/md/blog/2026-10-17-test1-1.html">Read full blog post</a></p><p><small>Submitted by @yocrrz</small></p></article>]]></content:encoded>
+<pubDate>Sat, 17 Oct 2026 15:54:58 GMT</pubDate>
+<guid isPermaLink="false">urn:vrss:1</guid>
+<dc:creator>@yocrrz</dc:creator>
+<category>Community</category>
+<category>vRSS</category>
+</item>
+</channel>
+</rss>
