@@ -1,0 +1,65 @@
+name: Update blog index
+
+on:
+  push:
+    paths:
+      - "blog/*.html"
+      - "generate_index.py"
+      - "generate_og.py"
+      - ".github/workflows/update-index.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Prevent multiple index-update workflows from running at the same time.
+concurrency:
+  group: update-blog-index
+  cancel-in-progress: false
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Pillow is only needed inside GitHub Actions.
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install Pillow
+        run: python3 -m pip install --disable-pip-version-check Pillow
+
+      - name: Generate OG images and metadata
+        run: python3 generate_og.py
+
+      - name: Generate index.json
+        run: python3 generate_index.py
+
+      - name: Commit and push generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- blog assets/og index.json; then
+            echo "Generated files are already up to date."
+            exit 0
+          fi
+
+          git add blog assets/og index.json
+
+          git commit -m "chore: update blog metadata [skip ci]"
+
+          # Rebase our generated commit on top of the latest main.
+          git fetch origin main
+          git rebase origin/main
+
+          # Push the rebased commit.
+          git push origin HEAD:main
