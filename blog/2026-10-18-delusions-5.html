@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delusions</title>
+<meta name="description" content="Today, when I was in market, in a showroom of cloths    I saw a mannequin in a bride&#x27;s dress, her hands were out in smooth pattern she was sitting on the bench   i was too close to it, thinking about ">
+<meta name="blog-title" content="Delusions">
+<meta name="blog-timestamp" content="2026-10-18T12:46:24.959209+00:00">
+<meta name="blog-author" content="@yocrrz">
+<link rel="alternate" type="application/rss+xml" title="vRSS" href="https://yocrrz.likes-ur.mom/md/feed.xml">
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --paper: #f7f3e8;
+    --paper-deep: #eee8d8;
+    --surface: #fbf9f3;
+    --ink: #252321;
+    --ink-soft: #4f4a43;
+    --muted: #817b70;
+    --faint: #aaa397;
+    --border: #ded8c9;
+    --border-dark: #cfc7b5;
+    --accent: #c45a3d;
+    --accent-soft: rgba(196, 90, 61, .09);
+    --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "Source Code Pro", "SFMono-Regular", Consolas, monospace;
+    --serif: Georgia, "Times New Roman", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--paper), #f5f0e4);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: rgba(196, 90, 61, .18);
+    color: var(--ink);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(820px, calc(100% - 40px));
+    margin-inline: auto;
+}
+
+/* Header */
+
+header {
+    padding: 42px 0 52px;
+    border-bottom: 1px solid var(--border);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 58px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-mark {
+    width: 9px;
+    height: 9px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 5px var(--accent-soft);
+}
+
+.brand-name {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .08em;
+}
+
+.back {
+    color: var(--muted);
+    font-size: 13px;
+    transition: color .2s ease;
+}
+
+.back:hover,
+.footer-link:hover {
+    color: var(--accent);
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 19px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .025em;
+}
+
+.meta-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--faint);
+}
+
+h1 {
+    max-width: 850px;
+    font-family: var(--serif);
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    font-weight: 600;
+    line-height: .98;
+    letter-spacing: -.045em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+}
+
+.author-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
+.author-row strong {
+    color: var(--ink-soft);
+    font-weight: 600;
+}
+
+.meta-dot {
+    flex-shrink: 0;
+}
+
+/* Article */
+
+main {
+    padding: 60px 0 100px;
+}
+
+.article-inner {
+    width: min(100%, 700px);
+    margin-inline: auto;
+    min-width: 0;
+}
+
+article {
+    overflow-wrap: break-word;
+}
+
+article p {
+    margin: 0 0 1.55em;
+    color: var(--ink-soft);
+    font-family: var(--serif);
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+article h2,
+article h3,
+article h4 {
+    color: var(--ink);
+    font-family: var(--serif);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -.025em;
+}
+
+article h2 {
+    margin: 2.5em 0 .7em;
+    font-size: 1.8rem;
+}
+
+article h3 {
+    margin: 2.2em 0 .65em;
+    font-size: 1.4rem;
+}
+
+article h4 {
+    margin: 2em 0 .6em;
+    font-size: 1.15rem;
+}
+
+article a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+article a:hover {
+    color: #9e4029;
+}
+
+article ul,
+article ol {
+    margin: 0 0 1.6em 1.3em;
+    padding-left: 1.1em;
+    color: var(--ink-soft);
+    font-family: var(--serif);
+    font-size: 1.06rem;
+    line-height: 1.8;
+}
+
+article li {
+    padding-left: .35em;
+    margin-bottom: .45em;
+}
+
+article li::marker {
+    color: var(--accent);
+}
+
+article blockquote {
+    margin: 2.4em 0;
+    padding: 8px 0 8px 28px;
+    border-left: 2px solid var(--accent);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.55;
+}
+
+article blockquote p {
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+article code {
+    padding: .15em .35em;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--paper-deep);
+    color: #8f402d;
+    font-family: var(--mono);
+    font-size: .82em;
+}
+
+article pre {
+    overflow-x: auto;
+    margin: 2em 0;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: #ebe5d8;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+}
+
+article pre code {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    font-size: .83rem;
+    line-height: 1.7;
+    white-space: pre;
+}
+
+article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2.2em auto;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    box-shadow: 0 18px 45px rgba(62, 48, 31, .055);
+}
+
+article figure {
+    margin: 2.4em 0;
+}
+
+article figure img {
+    margin: 0;
+}
+
+article figcaption {
+    margin-top: 9px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+article table {
+    width: 100%;
+    margin: 2em 0;
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: .9rem;
+}
+
+article th,
+article td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+article th {
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+article td {
+    color: var(--ink-soft);
+}
+
+article hr {
+    width: 100%;
+    height: 1px;
+    margin: 3em 0;
+    border: 0;
+    background: var(--border);
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0 45px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .02em;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-brand {
+    color: var(--ink-soft);
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link {
+    color: var(--muted);
+    transition: color .2s ease;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: min(100% - 28px, 820px);
+    }
+
+    header {
+        padding: 28px 0 42px;
+    }
+
+    .topbar {
+        margin-bottom: 45px;
+    }
+
+    h1 {
+        font-size: clamp(2.45rem, 13vw, 4rem);
+        letter-spacing: -.04em;
+    }
+
+    main {
+        padding: 42px 0 75px;
+    }
+
+    .article-inner {
+        width: 100%;
+    }
+
+    article p {
+        font-size: 1.04rem;
+        line-height: 1.8;
+    }
+
+    article h2 {
+        font-size: 1.6rem;
+    }
+
+    article h3 {
+        font-size: 1.3rem;
+    }
+
+    article blockquote {
+        padding-left: 20px;
+        font-size: 1.15rem;
+    }
+
+    article pre {
+        margin-inline: -2px;
+        padding: 16px;
+        border-radius: 7px;
+    }
+
+    article table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: min(100% - 22px, 820px);
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="topbar">
+            <a class="brand" href="https://yocrrz.likes-ur.mom/md/">
+                <span class="brand-mark"></span>
+                <span class="brand-name">yocrrz</span>
+            </a>
+            <a class="back" href="https://yocrrz.likes-ur.mom/md/">← Back to blog</a>
+        </nav>
+
+        <div class="post-meta">
+            <span>vRSS</span>
+            <span class="meta-dot"></span>
+            <time datetime="2026-10-18T12:46:24.959209+00:00">18 OCT 2026</time>
+        </div>
+
+        <h1>Delusions</h1>
+    </div>
+</header>
+
+<main class="container">
+    <div class="article-inner">
+        <article>
+            <p>Today, when I was in market, in a showroom of cloths </br>  I saw a mannequin in a bride's dress, her hands were out in smooth pattern she was sitting on the bench </br> i was too close to it, thinking about her, I saw in her eyes grabbing her fingers softly closing eyes,I felt her, then I am in absolute depression </br> the short moment was something else for me i would try to explain it but </br> i cant </br> it really felt something else like another area like i am in middle of nowhere and suddenly my mind start to feel heavy, </br> things were pleasent but then i came back to reality, i could feel the softness of her hand </br> when i will sleep today i would feel her way deeper </br> all these is just my fantasy i try to forget all these but i couldnt </br> fantasy? huh. </br> in case i dont see yall goodnight</p>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <a class="footer-brand" href="https://yocrrz.likes-ur.mom/md/">my things</a>
+        <div class="footer-links">
+            <a class="footer-link" href="https://yocrrz.likes-ur.mom/md/"> home</a>
+            <a class="footer-link" href="https://yocrrz.likes-ur.mom/md/feed.xml">RSS feed ↗</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
